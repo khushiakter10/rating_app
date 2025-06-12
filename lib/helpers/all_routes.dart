@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../features/app_aducation/presentation/stack_and_container.dart';
 import '../features/app_aducation/presentation/categori_screen.dart';
-import '../features/app_aducation/presentation/categories_screen.dart';
+import '../features/app_aducation/presentation/categories_f_screen.dart';
 import '../features/app_aducation/presentation/data_copriva_screen.dart';
 import '../features/app_aducation/presentation/edit_profile_copy.dart';
 import '../features/app_aducation/presentation/education_screeen.dart';

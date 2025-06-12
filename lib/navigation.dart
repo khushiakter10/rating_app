@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'features/app_aducation/presentation/stack_and_container.dart';
 import 'features/app_aducation/presentation/categori_screen.dart';
-import 'features/app_aducation/presentation/categories_screen.dart';
+import 'features/app_aducation/presentation/categories_f_screen.dart';
 import 'features/app_aducation/presentation/data_copriva_screen.dart';
 
 import 'gen/assets.gen.dart';

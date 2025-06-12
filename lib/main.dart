@@ -6,15 +6,9 @@ import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
-
-
 import 'package:provider/provider.dart';
 import 'package:rating_ui/constants/app_constants.dart';
-import 'package:rating_ui/features/app_aducation/presentation/categori_screen.dart';
-import 'package:rating_ui/features/app_aducation/presentation/container_icon_design_screen.dart';
-import 'package:rating_ui/features/app_aducation/presentation/edit_profile_copy.dart';
-import 'package:rating_ui/features/app_aducation/presentation/vegetables.dart';
+import 'package:rating_ui/features/app_aducation/presentation/categories_f_screen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/all_routes.dart';
 import 'helpers/di.dart';
@@ -102,7 +96,7 @@ class UtillScreenMobile extends StatelessWidget {
             //  home: const WelcomeScreen(),
             // home:   const OnbordingScreen(),
 
-            home:   SamohvalScreen  (),
+            home:   CategoriesScreen  (),
           ),
         );
       },

@@ -1,13 +1,14 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../constants/text_font_style.dart';
-import '../../../gen/assets.gen.dart';
-import '../../../gen/colors.gen.dart';
-import '../../../helpers/all_routes.dart';
-import '../../../helpers/navigation_service.dart';
-import '../../../helpers/ui_helpers.dart';
-import '../../../widget/custom_text_form.dart';
+import 'package:rating_ui/constants/text_font_style.dart';
+import 'package:rating_ui/gen/assets.gen.dart';
+import 'package:rating_ui/gen/colors.gen.dart';
+import 'package:rating_ui/helpers/all_routes.dart';
+import 'package:rating_ui/helpers/navigation_service.dart';
+import 'package:rating_ui/helpers/ui_helpers.dart';
+import 'package:rating_ui/widget/custom_text_form.dart';
+
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({super.key});
@@ -23,7 +24,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     'assets/images/lebu.jpg',
     'assets/images/food.webp',
     'assets/images/food.webp',
-    'assets/images/food.webp',
+    'assets/images/ppp.webp',
   ];
 
   final List<String> name = [
@@ -54,9 +55,9 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               GestureDetector(
-                onTap: (){
-                  NavigationService.goBack;
-                },
+                  onTap: (){
+                    NavigationService.goBack;
+                  },
                   child: Image.asset(Assets.icons.a22.path, height: 20.h)),
               Text(
                 "Categorises",
@@ -84,11 +85,11 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 ),
               ),
               GridView.builder(
-                physics: PageScrollPhysics(),
+                  physics: const PageScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: data.length,
                   scrollDirection: Axis.vertical,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 15,
@@ -119,19 +120,17 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                             ),
                             Text(name[index],
                                 style: TextFontStyle.c2D0C57vagitable
-                                    .copyWith(color:  Color(0xffc2D0C57))),
+                                    .copyWith(color:  const Color(0xffc2d0c57))),
 
-                            UIHelper.verticalSpace(10.h),
-
+                            UIHelper.verticalSpace(11.h),
                             Text(data[index],
                                 style: TextFontStyle.c9586A8poppins
-                                    .copyWith(color:  Color(0xffc9586A8)))
+                                    .copyWith(color:  const Color(0xffc9586A8)))
                           ],
                         ),
                       ),
                     );
                   }),
-              UIHelper.verticalSpace(50.h),
             ],
           ),
         ),

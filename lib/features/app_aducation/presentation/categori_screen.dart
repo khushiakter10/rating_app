@@ -98,6 +98,7 @@ class _CategoriScreenState extends State<CategoriScreen> {
                 ],
               ),
               UIHelper.verticalSpace(30.h),
+
               GestureDetector(
                 onTap: (){
                   NavigationService.navigateTo(Routes.lesson_Screen);

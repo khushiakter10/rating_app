@@ -1,5 +1,5 @@
 // import 'package:flutter/material.dart';
-// import 'package:khusi/features/app_aducation/presentation/categories_screen.dart';
+// import 'package:khusi/features/app_aducation/presentation/categories_f_screen.dart';
 // import 'package:khusi/features/app_aducation/presentation/checkout_screen.dart';
 // import 'package:khusi/features/app_aducation/presentation/spain_screen.dart';
 // import 'package:khusi/features/app_aducation/presentation/splash_screen.dart';
