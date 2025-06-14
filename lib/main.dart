@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'package:rating_ui/constants/app_constants.dart';
-import 'package:rating_ui/features/profile/presentation/screen.dart';
+import 'package:rating_ui/features/profile/presentation/mordern_screen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/all_routes.dart';
 import 'helpers/di.dart';
