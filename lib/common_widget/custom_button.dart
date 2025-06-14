@@ -28,7 +28,7 @@ Widget customeButton({
     child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        icon?? const SizedBox(), 
+        icon?? const SizedBox(),
         icon !=null? UIHelper.horizontalSpace(16.w): UIHelper.horizontalSpace(0),
         Text(
           name,

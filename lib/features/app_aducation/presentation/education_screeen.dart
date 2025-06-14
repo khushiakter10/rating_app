@@ -27,10 +27,8 @@ class _EducationScreeenState extends State<EducationScreeen> {
             UIHelper.verticalSpace(50.h),
             Row(
               children: [
-                GestureDetector(
-                  onTap: () {},
-                  child: Image.asset(Assets.images.rectangle.path, height: 20),
-                ),
+                GestureDetector(onTap: () {},child: Image.asset(Assets.images.rectangle.path, height: 20)),
+
                 UIHelper.horizontalSpace(20.w),
                 Column(
                   children: [
@@ -40,14 +38,13 @@ class _EducationScreeenState extends State<EducationScreeen> {
                   ],
                 ),
                 UIHelper.horizontalSpace(28.w),
-                GestureDetector(
-                  onTap: () {},
+                GestureDetector(onTap: () {},
+
                   child: Row(
                     children: [
                       Image.asset(Assets.images.loves.path),
                       UIHelper.horizontalSpace(15.w),
-                      Image.asset(
-                        Assets.images.oval.path,
+                      Image.asset( Assets.images.oval.path,
                         height: 45,
                       ),
                     ],
@@ -55,6 +52,7 @@ class _EducationScreeenState extends State<EducationScreeen> {
                 )
               ],
             ),
+
             UIHelper.verticalSpace(50.h),
             Center(
               child: Image.asset(
@@ -113,7 +111,6 @@ class _EducationScreeenState extends State<EducationScreeen> {
                   }, separatorBuilder: (BuildContext context, int index) {
                     return SizedBox(height: 10.h);
                 },
-
                 ),
               ),
             )

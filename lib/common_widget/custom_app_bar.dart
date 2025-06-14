@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:rating_ui/common_widget/icon_holder_widget.dart';
-import '../constants/text_font_style.dart';
-import '../gen/colors.gen.dart';
-import '../helpers/navigation_service.dart';
-import '../helpers/ui_helpers.dart';
+import 'package:rating_ui/constants/text_font_style.dart';
+import 'package:rating_ui/gen/colors.gen.dart';
+import 'package:rating_ui/helpers/navigation_service.dart';
+import 'package:rating_ui/helpers/ui_helpers.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final String name;
@@ -27,9 +27,9 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
       height: 75.h,
       color:Colors.transparent,
       child: Padding(
-        padding:  EdgeInsets.only(top: 10, left: UIHelper.kDefaulutPadding() ),
+        padding:  EdgeInsets.only(top: 10, left: UIHelper.kDefaulutPadding()),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center, 
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: showBack? MainAxisAlignment.start : MainAxisAlignment.center,
         children: [
           showBack?InkWell(
@@ -50,12 +50,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
           ) : const SizedBox.shrink(),
            showBack? UIHelper.horizontalSpace(titleSpace)  : const SizedBox.shrink(),
           Flexible(
-            child: Text(
-              name.tr, // title,
-              overflow: TextOverflow.ellipsis,
-              style: TextFontStyle.headline24c011510OutfitW600
-                  .copyWith(fontSize: 16.sp, color: titleColor),
-            ),
+            child: Text(name.tr,overflow: TextOverflow.ellipsis,style: TextFontStyle.headline24c011510OutfitW600  .copyWith(fontSize: 16.sp, color: titleColor)),
           ),
           // showBack? UIHelper.horizontalSpace(110.w) : const SizedBox.shrink(),
         ]),

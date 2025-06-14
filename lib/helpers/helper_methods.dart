@@ -18,8 +18,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:intl/intl.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:rating_ui/common_widget/custom_button.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import '../common_widget/custom_button.dart';
 import '../gen/colors.gen.dart';
 import '/helpers/di.dart';
 import '/helpers/toast.dart';
@@ -167,7 +167,7 @@ Future<void> setInitValue() async {
 String extractAndConvertAmPm(String time) {
   // Use a regular expression to find AM or PM
   final match = RegExp(r'(AM|PM)').firstMatch(time);
-  
+
   // If a match is found, convert to lowercase and return; otherwise, return an empty string
   return match != null ? match.group(0)!.toLowerCase() : '';
 }
@@ -449,7 +449,7 @@ String convertTimeFormat(String input) {
   // Split the input string to get the time part
   List<String> parts = input.split(' ');
   String timePart = parts[0]; // "04:37"
-  
+
   // Parse the time string into a DateTime object
   DateTime dateTime = DateFormat("HH:mm").parse(timePart);
 
@@ -636,7 +636,7 @@ class _RadioButtonListState extends State<RadioButtonList> {
                 Radio<String>(
                   value: option,
                   groupValue: _selectedOption,
-                  
+
                   onChanged: (String? value) {
                     setState(() {
                       _selectedOption = value;
