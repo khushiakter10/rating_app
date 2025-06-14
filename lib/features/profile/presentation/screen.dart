@@ -13,7 +13,7 @@ class Screen extends StatefulWidget {
 class _ScreenState extends State<Screen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: AppColors.cFFFFFF,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -21,35 +21,55 @@ class _ScreenState extends State<Screen> {
           children: [
             UIHelper.verticalSpace(50),
 
-            Container(
-              height:200,
-              width: 300,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16.r),
-                border: Border.all(color: Colors.red)
-              ),child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start
-              ,
-              children: [
-                Container(
-                  height:150,
-                  width: 300,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16.r),
-                    image: DecorationImage(image: AssetImage('assets/images/sobjigreen.png'),fit: BoxFit.cover),
-
-                  ),
+            Expanded(
+              child: GridView.builder(
+                padding: EdgeInsets.zero,
+                scrollDirection: Axis.vertical,
+                itemCount: 20,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                    height: 190.h,
+                    width: 200.w,
+                    decoration: BoxDecoration(
+                      color: const Color(0XFF567291),
+                      borderRadius: BorderRadius.circular(16.r),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 110.h,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16.r),
+                            image: const DecorationImage(
+                              image: AssetImage('assets/images/sobjigreen.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 29.h),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Text('Hashi', style: TextStyle(color: Colors.black)),
+                              Spacer(),
+                              Text('khusi', style: TextStyle(color: Colors.black)),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 5,
+                  crossAxisSpacing: 5,
+                  childAspectRatio: 0.95,
                 ),
-                UIHelper.verticalSpace(11.h),
-                Row(
-                  children: [
-                    Text('khusi',style: TextStyle(color: Colors.red)),
-
-                  ],
-                )
-              ],
+              ),
             ),
-            )
           ],
         ),
       ),
