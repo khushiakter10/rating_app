@@ -131,7 +131,7 @@ class _SpainScreenState extends State<SpainScreen> {
                                 border: Border.all(color: AppColors.cD9D0E3)),
                             child: Padding(
                               padding: const EdgeInsets.all(19.0),
-                              child: Image.asset(Assets.images.love,
+                              child: Image.asset(Assets.images.menpic.path,
                                   height: 20.sp),
                             ),
                           ),

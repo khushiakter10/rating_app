@@ -42,7 +42,7 @@ class _EducationScreeenState extends State<EducationScreeen> {
 
                   child: Row(
                     children: [
-                      Image.asset(Assets.images.loves.path),
+                      Image.asset(Assets.images.menpic.path,height: 20.h,),
                       UIHelper.horizontalSpace(15.w),
                       Image.asset( Assets.images.oval.path,
                         height: 45,

@@ -16,6 +16,7 @@ class CategoriScreen extends StatefulWidget {
 }
 
 class _CategoriScreenState extends State<CategoriScreen> {
+
   final List<String> image = [
     'assets/images/roket.png',
     'assets/images/roket.png',

@@ -96,7 +96,7 @@ class _IndexScreenState extends State<IndexScreen> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(20.r), // Image Border Radius
                                 child: Image.asset(
-                                  Assets.images.roket1.path,
+                                  Assets.images.roket.path,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -115,7 +115,7 @@ class _IndexScreenState extends State<IndexScreen> {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Image.asset(Assets.images.bsc.path, height: 15.h),
+                                      Image.asset(Assets.images.selecthome.path, height: 15.h),
                                       UIHelper.horizontalSpace(8.w),
                                       Text("Gift Box", style: TextFontStyle.cFFFFFF11),
                                     ],
@@ -145,7 +145,7 @@ class _IndexScreenState extends State<IndexScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Image.asset(Assets.images.green2.path,height: 50.h),
+                          Image.asset(Assets.images.food.path,height: 50.h),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -195,7 +195,7 @@ class _IndexScreenState extends State<IndexScreen> {
                                   Text("Grammar", style: TextFontStyle.headlinec000000w70018),
                                   ListTile(
                                     contentPadding: EdgeInsets.zero, // Default padding সরানো হয়েছে
-                                    leading: Image.asset(Assets.images.easten.path),
+                                    leading: Image.asset(Assets.images.food.path),
                                     title: Text("In the lessons we", style: TextFontStyle.headlinec000000w400),
                                     subtitle: Text("learn new words", style: TextFontStyle.headlinec000000w400),
                                   ),

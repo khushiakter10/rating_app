@@ -31,8 +31,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20.w),
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
-            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               UIHelper.verticalSpace(50.h),
               Row(
@@ -48,7 +46,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image.asset(
-                        Assets.images.samohval.path,
+                        Assets.images.selecthome.path,
                         height: 11.h,
                       ),
                       UIHelper.verticalSpace(7.h),
@@ -66,7 +64,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   mainAxisAlignment:
                       MainAxisAlignment.center, // পুরো Column-কে Center-এ আনবে
                   crossAxisAlignment: CrossAxisAlignment
-                      .center, // Column-এর মধ্যে সবকিছু Center-এ রাখবে
+                      .center,
                   children: [
                     Text(
                       "Welcome",

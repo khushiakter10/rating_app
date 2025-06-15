@@ -45,7 +45,7 @@ class _PrograseScreenState extends State<PrograseScreen> {
                   },
                   child: Row(
                     children: [
-                      Image.asset(Assets.images.loves.path,height: 15.h,),
+                      Image.asset(Assets.images.menpic.path,height: 15.h,),
                       UIHelper.horizontalSpace(40.w),
                       Image.asset(
                         Assets.images.oval.path,

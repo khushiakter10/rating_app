@@ -44,7 +44,7 @@ class _DataCoprivaScreenState extends State<DataCoprivaScreen> {
                 UIHelper.horizontalSpace(15.w),
                 Row(
                   children: [
-                    Image.asset(Assets.images.loves.path),
+                    Image.asset(Assets.images.menpic.path,height: 20,),
                     UIHelper.horizontalSpace(10.w),
                     GestureDetector(
                       onTap: () {

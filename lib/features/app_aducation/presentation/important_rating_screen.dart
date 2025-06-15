@@ -117,7 +117,7 @@ class _RatingScreenState extends State<RatingScreen> {
                   UIHelper.horizontalSpace(28.w),
                   Row(
                     children: [
-                      Image.asset(Assets.images.loves.path),
+                      Image.asset(Assets.images.menpic.path,height: 20.h,),
                       UIHelper.horizontalSpace(15.w),
                       Image.asset(
                         Assets.images.oval.path,
@@ -219,7 +219,7 @@ class _RatingScreenState extends State<RatingScreen> {
                             student[index],
                             style: TextFontStyle.cFA6400,
                           ),
-                          Image.asset(Assets.images.love, height: 24.h),
+                          Image.asset(Assets.images.menpic.path, height: 24.h),
                         ],
                       ),
                     );

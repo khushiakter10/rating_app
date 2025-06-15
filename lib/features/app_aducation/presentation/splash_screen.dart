@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
                                     child: Transform.scale(
                                         scale: 0.4,
                                         child: Image.asset(
-                                          Assets.images.box99.path,
+                                          Assets.images.menpic.path,
                                           height: 5.h,
                                         )),
                                   ),

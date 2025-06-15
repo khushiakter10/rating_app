@@ -41,7 +41,7 @@ class _BackScreenState extends State<BackScreen> {
                 UIHelper.horizontalSpace(10.w),
                 Row(
                   children: [
-                    Image.asset(Assets.images.loves.path),
+                    Image.asset(Assets.images.menpic.path,height: 20.h,),
                     UIHelper.horizontalSpace(10.w),
                     GestureDetector(
                       onTap: (){
