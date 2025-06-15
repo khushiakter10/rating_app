@@ -98,6 +98,7 @@ class _CardScreenState extends State<CardScreen> {
 
 
                               Text('Age: 22)',style: TextStyle(color: Colors.black, fontSize: 12.sp)),
+
                             ],
                           ),
                         )

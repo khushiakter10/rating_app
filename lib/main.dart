@@ -8,7 +8,9 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'package:rating_ui/constants/app_constants.dart';
+import 'package:rating_ui/features/profile/presentation/card_screen.dart';
 import 'package:rating_ui/features/profile/presentation/circle_screen.dart';
+import 'package:rating_ui/features/profile/presentation/listView_screen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/all_routes.dart';
 import 'helpers/di.dart';
@@ -96,7 +98,7 @@ class UtillScreenMobile extends StatelessWidget {
             //  home: const WelcomeScreen(),
             // home:   const OnbordingScreen(),
 
-            home:    const HardDesignScreen (),
+            home:     CardScreen (),
           ),
         );
       },
