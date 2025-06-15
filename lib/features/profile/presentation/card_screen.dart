@@ -52,7 +52,8 @@ class _CardScreenState extends State<CardScreen> {
                     margin: EdgeInsets.zero,
                     elevation: 3,
                    // color: Color(0XFF903382),
-                    color: const Color(0XFF439922),
+                   // color: const Color(0XFF439922),
+                    color: const Color(0XFF9999999),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.r),
                     ),
