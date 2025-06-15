@@ -6,9 +6,8 @@ import 'package:rating_ui/gen/colors.gen.dart';
 import 'package:rating_ui/helpers/all_routes.dart';
 import 'package:rating_ui/helpers/navigation_service.dart';
 import 'package:rating_ui/helpers/ui_helpers.dart';
-
-
 import 'gen/assets.gen.dart';
+
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -21,6 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.cFFFFFF,
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -62,14 +62,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Center(
                 child: Column(
                   mainAxisAlignment:
-                      MainAxisAlignment.center, // পুরো Column-কে Center-এ আনবে
+                      MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment
                       .center,
                   children: [
                     Text(
                       "Welcome",
                       style: TextFontStyle.c00000034,
-                      textAlign: TextAlign.center, // Text Center-এ দেখাবে
+                      textAlign: TextAlign.center,
                     ),
                     UIHelper.verticalSpace(20.h),
                     Text(
@@ -77,9 +77,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       style: TextFontStyle.c00000015w400,
                       textAlign: TextAlign.center,
                     ),
-                    Text(
-                      "new words.",
-                      style: TextFontStyle.c00000015w400,
+                    Text("new words.",style: TextFontStyle.c00000015w400,
                       textAlign: TextAlign.center,
                     ),
                   ],
