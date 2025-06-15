@@ -24,7 +24,7 @@ class ProfileCardScreen extends StatelessWidget {
               BoxShadow(
                 color: Colors.black.withOpacity(0.1),
                 blurRadius: 10,
-                offset:  Offset(0, 5),
+                offset:  const Offset(0, 5),
               ),
             ],
           ),
@@ -36,10 +36,8 @@ class ProfileCardScreen extends StatelessWidget {
                 backgroundImage: AssetImage('assets/images/manggo.jpg')
               ),
                const SizedBox(height: 15),
-              const Text(
-                "Mahmodul Hasan",
-                style: TextStyle(
-                  fontSize: 22,
+              const Text("Mahmodul Hasan",style: TextStyle(fontSize: 22,
+
                   fontWeight: FontWeight.bold,
                 ),
               ),

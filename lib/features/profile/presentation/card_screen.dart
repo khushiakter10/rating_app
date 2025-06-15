@@ -82,26 +82,22 @@ class _CardScreenState extends State<CardScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Mst: Khushi Akter',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 13.sp)),
-                              Text('Dep: Computer Science',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 12.sp)),
-                              Text('Season: 20-21',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 12.sp)),
-                              Text('Shift: 2nd',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 12.sp)),
+                              Text('Mst: Khushi Akter',style: TextStyle(color: Colors.black, fontSize: 13.sp)),
 
-                              Text('Roll: (502028)',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 12.sp)),
 
-                              Text('Age: 22)',
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 12.sp)),
+                              Text('Dep: Computer Science',style: TextStyle(color: Colors.black, fontSize: 12.sp)),
+
+
+                              Text('Season: 20-21',style: TextStyle( color: Colors.black, fontSize: 12.sp)),
+
+
+                              Text('Shift: 2nd',style: TextStyle(color: Colors.black, fontSize: 12.sp)),
+
+
+                              Text('Roll: (502028)',style: TextStyle(color: Colors.black, fontSize: 12.sp)),
+
+
+                              Text('Age: 22)',style: TextStyle(color: Colors.black, fontSize: 12.sp)),
                             ],
                           ),
                         )
