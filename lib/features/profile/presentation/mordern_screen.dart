@@ -180,6 +180,10 @@
 
 
 
+
+
+
+
 import 'package:flutter/material.dart';
 class ModernHomeScreen extends StatelessWidget {
   const ModernHomeScreen({super.key});
@@ -206,22 +210,10 @@ class ModernHomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Hello, Khushi 👋",
-              style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w400),
-            ),
+            const Text("Hello, Khushi 👋",style: TextStyle(color: Colors.white70,fontSize: 18, fontWeight: FontWeight.w400)),
             const SizedBox(height: 10),
-            const Text(
-              "Discover \nYour City",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  height: 1.2),
-            ),
+            const Text("Discover \nYour City", style: TextStyle(color: Colors.white,fontSize: 32,fontWeight: FontWeight.bold, height: 1.2)),
+
             const SizedBox(height: 25),
             Container(
               decoration: BoxDecoration(
@@ -240,13 +232,7 @@ class ModernHomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            const Text(
-              "Popular Places",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
+            const Text("Popular Places",style: TextStyle(color: Colors.white,fontSize: 20,   fontWeight: FontWeight.bold)),
             const SizedBox(height: 15),
             SizedBox(
               height: 220,
@@ -271,14 +257,9 @@ class ModernHomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 30),
-            const Text(
-              "Recommended",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
+             const SizedBox(height: 30),
+            const Text("Recommended",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
+
             const SizedBox(height: 15),
             _recommendedCard(),
           ],
@@ -343,15 +324,9 @@ class ModernHomeScreen extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        title: const Text(
-          "Santorini, Greece",
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
-        ),
-        subtitle: const Text(
-          "Romantic Destination",
-          style: TextStyle(color: Colors.white54),
-        ),
+        title: const Text("Santorini, Greece",style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+
+        subtitle: const Text("Romantic Destination",style: TextStyle(color: Colors.white54)),
         trailing: const Icon(Icons.arrow_forward_ios, color: Colors.white),
       ),
     );
