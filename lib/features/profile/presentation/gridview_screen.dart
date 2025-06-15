@@ -3,14 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rating_ui/gen/colors.gen.dart';
 import 'package:rating_ui/helpers/ui_helpers.dart';
 
-class Screen extends StatefulWidget {
-  const Screen({super.key});
+class GridviewScreen extends StatefulWidget {
+  const GridviewScreen({super.key});
 
   @override
-  State<Screen> createState() => _ScreenState();
+  State<GridviewScreen> createState() => _GridviewScreenState();
 }
 
-class _ScreenState extends State<Screen> {
+class _GridviewScreenState extends State<GridviewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _ScreenState extends State<Screen> {
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
                     height: 190.h,
-                    width: 200.w,
+                   // width: 200.w,
                     decoration: BoxDecoration(
                       color: const Color(0XFF567291),
                       borderRadius: BorderRadius.circular(16.r),
@@ -38,7 +38,7 @@ class _ScreenState extends State<Screen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          height: 110.h,
+                          height: 120.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16.r),
                             image: const DecorationImage(
