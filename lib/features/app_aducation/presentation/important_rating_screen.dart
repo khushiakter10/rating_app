@@ -16,18 +16,20 @@ class RatingScreen extends StatefulWidget {
 
 class _RatingScreenState extends State<RatingScreen> {
   final List<String> image = [
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
-    'assets/images/future.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+    'assets/images/menpic.png',
+
+
   ];
   final List<String> data = [
     'XP 1024',
@@ -120,7 +122,7 @@ class _RatingScreenState extends State<RatingScreen> {
                       Image.asset(Assets.images.menpic.path,height: 20.h,),
                       UIHelper.horizontalSpace(15.w),
                       Image.asset(
-                        Assets.images.oval.path,
+                        Assets.images.menpic.path,
                         height: 45,
                       ),
                     ],
@@ -135,14 +137,13 @@ class _RatingScreenState extends State<RatingScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "RATING",
-                        style: TextFontStyle.c171716,
-                      ),
-                      Text("Essential Grammar",
-                          style: TextFontStyle.c171716poppins),
-                      const Text(
-                        "In the lessons we learn new words and rules for\nvocabulary.",
+                      Text("RATING",style: TextFontStyle.c171716),
+
+
+                      Text("Essential Grammar", style: TextFontStyle.c171716poppins),
+
+                      const Text("In the lessons we learn new words and rules for\nvocabulary.",
+
                       ),
                     ],
                   ),
@@ -202,23 +203,16 @@ class _RatingScreenState extends State<RatingScreen> {
                                   border: Border.all(color: Colors.transparent),
                                 ),
                                 child: Center(
-                                  child: Text(
-                                    data[index],
-                                    style: const TextStyle(color: Colors.white),
-                                  ),
+                                  child: Text(data[index],style: const TextStyle(color: Colors.white))
                                 ),
                               ),
                             ],
                           ),
                           UIHelper.verticalSpace(5.h),
-                          Text(
-                            text[index],
-                            style: TextFontStyle.c00000011,
-                          ),
-                          Text(
-                            student[index],
-                            style: TextFontStyle.cFA6400,
-                          ),
+                          Text(text[index],style: TextFontStyle.c00000011),
+
+                          Text(student[index],style: TextFontStyle.cFA6400),
+
                           Image.asset(Assets.images.menpic.path, height: 24.h),
                         ],
                       ),
